@@ -100,7 +100,7 @@ def upload():
             response = {}
             response['status'] = 'OK'
             response['uuid'] = uniqueName
-            return flask.jsonify(**response)
+        return flask.jsonify(**response)
     except:
         os.remove(fullPath)
         response = {}
